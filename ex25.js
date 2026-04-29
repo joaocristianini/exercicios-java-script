@@ -1,12 +1,14 @@
-const prompt = require (`prompt-sync`)();
+const prompt = require('prompt-sync')();
 
-console.log("--- Cálculo de raiz ---");
+console.log("--- Sucessor e Antecessor de um número inteiro ---");
 
-//Entrada de dados
-let base = Number(prompt("Insira a base da raiz: "));
-let indice = Number(prompt("Insira o índice da raiz: "));
-//Processamento
-let raiz = base ** (1 / indice)
+// Entrada de dados
+let n1 = Number(prompt("Insira um valor númerico inteiro: "));
 
-//Saída
-console.log(`valor da raiz calculada: ${raiz.toFixed(2)}`);
+// Processamento
+let Sucessor = n1 + 1
+let Antecessor = n1 - 1
+
+// Saída
+console.log(`valor do Sucessor: ${Sucessor.toFixed(2)}`);
+console.log(`valor do Antecessor: ${Antecessor.toFixed(2)}`);
